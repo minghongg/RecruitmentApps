@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    tools:context=".Resource.ApplyActivity">
+
+    <Button
+        android:id="@+id/btn_vac_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desc"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_radius"
+        />
+
+    <Button
+        android:id="@+id/btn_vac_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_radius"
+        />
+
+</RelativeLayout>

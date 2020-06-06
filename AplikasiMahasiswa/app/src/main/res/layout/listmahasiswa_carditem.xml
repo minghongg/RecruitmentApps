@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:id="@+id/listMahasiswa_RecyclerViewDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:padding="@dimen/size10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="@dimen/size10dp"
+                android:id="@+id/listMahasiswa_TextView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Mahasiswa"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/listMahasiswa_TextView_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ("
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/listMahasiswa_TextView_name"
+                />
+
+            <TextView
+                android:id="@+id/listMahasiswa_TextView_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/listMahasiswa_TextView_open"/>
+            <TextView
+                android:id="@+id/listMahasiswa_TextView_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/listMahasiswa_TextView_job"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp">
+
+        <Button
+            android:id="@+id/listMahasiswa_Button_Profile"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:background="@drawable/custom_curvebutton_greyborder"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/listMahasiswa_Button_Accept"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:background="@drawable/custom_curvebutton_greyborder"
+            android:layout_toRightOf="@id/listMahasiswa_Button_Profile"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"/>
+        <Button
+            android:id="@+id/listMahasiswa_Button_Reject"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            android:background="@drawable/custom_curvebutton_greyborder"
+            android:layout_toRightOf="@id/listMahasiswa_Button_Accept"
+            android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/light_grey"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
