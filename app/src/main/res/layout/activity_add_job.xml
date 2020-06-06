@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resource.AddJobActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/tv_job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="Pekerjaan"/>
+
+        <EditText
+            android:id="@+id/et_job_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size50dp"
+            android:layout_below="@+id/tv_job_title"
+            android:layout_margin="@dimen/size10dp"
+            android:padding="@dimen/size10dp"
+            android:hint="Nama pekerjaan"
+            android:background="@drawable/job_title_background"/>
+
+        <TextView
+            android:id="@+id/tv_job_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginTop="@dimen/size10dp"
+            android:layout_below="@+id/et_job_title"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:text="Deskripsi"/>
+
+        <EditText
+            android:id="@+id/et_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_job_description"
+            android:layout_margin="@dimen/size10dp"
+            android:padding="@dimen/size10dp"
+            android:hint="Deskripsi pekerjaan"
+            android:maxLines="100"
+            android:background="@drawable/job_title_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/et_job_description"
+            android:layout_marginTop="@dimen/size10dp">
+
+            <TextView
+                android:id="@+id/tv_job_quota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:text="Kuota : "
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/et_job_quota"
+                android:layout_width="@dimen/size50dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/size50dp"
+                android:layout_marginBottom="@dimen/size10dp"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:background="@drawable/job_title_background"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom= "true"
+            android:layout_alignParentRight="true"
+            android:text="@string/insert"
+            android:background="@color/blueViolet"
+            android:textColor="@color/white"
+            >
+        </Button>
+    </RelativeLayout>
+
+</ScrollView>
